@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Background Remover Pro</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Effortless AI Background Removal</h1>
+        <p class="subtitle">Upload an image and instantly get a transparent PNG!</p>
+
+        <div id="uploadSection">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button id="processImageBtn">Remove Background & Download</button>
+            <div id="statusMessage" class="message" style="display: none;"></div>
+        </div>
+
+        <div id="resultSection" style="display: none;">
+            <h2>Processed Image Preview:</h2>
+            <img id="processedImage" src="#" alt="Processed Image" class="image-preview">
+            <button id="nextImageBtn" class="secondary-btn">Process Another Image</button>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
