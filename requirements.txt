@@ -2,3 +2,8 @@ Flask==3.0.3
 rembg==2.1.25
 Pillow==10.3.0
 onnxruntime==1.18.0
+
+Flask
+Pillow # Or whatever image processing library
+gunicorn
+# other dependencies...
